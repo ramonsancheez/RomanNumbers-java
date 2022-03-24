@@ -8,7 +8,6 @@ public enum EnumsNumbers {
     C(100),
     D(500),
     M(1000);
-
     public int value;
 
     private EnumsNumbers(int value) {
