@@ -7,6 +7,7 @@ import java.util.Map;
 public class RomanNumber {
     private String numeroRomano = "";
     private Map<String, Integer> dicRoman = new HashMap<>();
+
     public void setNumeroRomano(String numeroRomano) {
         this.numeroRomano = numeroRomano;
     }
@@ -22,7 +23,7 @@ public class RomanNumber {
         System.out.println(totalSum);
         return totalSum;
     }
-    public void initRegexDicionario() {
+    public void initDicionario() {
         dicRoman.put("I", 1);
         dicRoman.put("V", 5);
         dicRoman.put("X", 10);

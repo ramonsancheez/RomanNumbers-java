@@ -18,7 +18,7 @@ public class NumeroRomanoTest {
     @BeforeClass
     public static void setup() {
         numeroRomano = new RomanNumber();
-        numeroRomano.initRegexDicionario();
+        numeroRomano.initDicionario();
     }
 
     /**
