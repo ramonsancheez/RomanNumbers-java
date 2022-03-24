@@ -15,13 +15,6 @@ public class RomanNumber {
         /*System.out.println(numeroRomano);*/
         numeroRomano = numeroRomano.replaceAll("[^IXMDVCL]", "");
         /*System.out.println(numeroRomano);*/
-        dicRoman.put("I", 1);
-        dicRoman.put("V", 5);
-        dicRoman.put("X", 10);
-        dicRoman.put("L", 50);
-        dicRoman.put("C", 100);
-        dicRoman.put("D", 500);
-        dicRoman.put("M", 1000);
         for (int i = 0; i < numeroRomano.length(); i++) {
             char number = numeroRomano.charAt(i); /*Recorrer un string con char*/
             totalSum += dicRoman.get(Character.toString(number)); /* Cambio de char a string para que lo encuentre en el dict y se suma*/
@@ -29,5 +22,13 @@ public class RomanNumber {
         System.out.println(totalSum);
         return totalSum;
     }
-    public void initRegexDicionario() {}
+    public void initRegexDicionario() {
+        dicRoman.put("I", 1);
+        dicRoman.put("V", 5);
+        dicRoman.put("X", 10);
+        dicRoman.put("L", 50);
+        dicRoman.put("C", 100);
+        dicRoman.put("D", 500);
+        dicRoman.put("M", 1000);
+    }
 }
