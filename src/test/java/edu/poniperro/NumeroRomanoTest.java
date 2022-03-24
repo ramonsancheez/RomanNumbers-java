@@ -18,7 +18,6 @@ public class NumeroRomanoTest {
     @BeforeClass
     public static void setup() {
         numeroRomano = new RomanNumber();
-        numeroRomano.initDicionario();
     }
 
     /**
@@ -27,10 +26,9 @@ public class NumeroRomanoTest {
 
     @Test
     public void grupo_M_test() {
-
-        String testCase = "M";
+        String testCase = null;
         numeroRomano.setNumeroRomano(testCase);
-        assertEquals(1000, numeroRomano.toDecimal());
+        assertEquals(-1, numeroRomano.toDecimal());
 
         testCase = "UMMU";
         numeroRomano.setNumeroRomano(testCase);
@@ -96,7 +94,7 @@ public class NumeroRomanoTest {
      * XL(40), XC(90),
      * CD(400), CM(900)
      */
-    /*
+
     @Test
     public void grupo_C_DM_test() {
 
@@ -192,8 +190,6 @@ public class NumeroRomanoTest {
          * numeroRomano.setNumeroRomano("U");
          * assertEquals(900, numeroRomano.valorDecimal(test));
          */
-
-
 
 }
 
